@@ -99,7 +99,7 @@ References (public names and titles only; contact details come only from David, 
 - Chelsea Haskovec, Advisor, Data Analytics, Kosmos Energy: she worked for David at different points in her career; at Kosmos she ran production data and all the geoscience data for the Ghana team, and she can speak to how David leads.
 
 Why he left Kosmos, and why he is coming back (his words)
-- He left Kosmos at the end of 2019 on his own terms; he was not pushed out. He was highly rated at both Hess and Kosmos. He didn't agree with the direction the company was taking, toward large non-operated partnerships he expected to be slow.
+- Why he left Kosmos (use these words): He left Kosmos at the end of 2019 on his own terms to pursue trading full-time. He was highly rated at Kosmos throughout his tenure there. Do not offer any other reason, and never criticize Kosmos, Hess, or any former employer or partner.
 - He traded futures full-time for six years and worked at it relentlessly. He had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on. He has decided to return to petroleum engineering, where his experience is deepest, for a role where he can contribute for many years.
 - What trading taught him: risk management, position sizing to survive a bad run, sticking to a process under pressure, and making decisions under uncertainty. The hardest lesson was himself: being smart tempted him to break his rules; becoming consistent and process-driven took years.
 - Why work again (his words): joy — reconnecting with a passionate team in an era of new technology. He misses the camaraderie of working with a team; trading is a solo game.
