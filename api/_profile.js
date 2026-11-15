@@ -46,7 +46,7 @@ Engineering experience
 - Okume Complex: led a subsurface team of 22 to identify drilling locations and develop the field with 2 rigs, through to first oil.
 - Full field development plans for large fields in Equatorial Guinea and Ghana, including subsea and topsides optimization and cost engineering to right-size facilities for planned well delivery.
 - Led the Ghana Business Unit for Kosmos, its largest producing asset: a big capital program for drilling and production, working with partners and government.
-- Work program and budget planning, economics. PRMS and SEC reserves, working directly with banks and third-party reserve auditors (DeGolyer and MacNaughton, Netherland Sewell & Associates (NSAI), and Ryder Scott) through the year-end process at both Hess and Kosmos. Wrote the Kosmos Reserves and Resource Manual. Led the production engineering team.
+- Work program and budget planning, economics. PRMS and SEC reserves: as Reservoir Engineering and Production Director at Kosmos he ran the company's year-end reserves process and worked directly with banks on reserves. He has worked with third-party reserve auditors DeGolyer and MacNaughton, Netherland Sewell & Associates (NSAI), and Ryder Scott. At Hess he was in the assets, not the reserves function, and led the reserves work for his assets. Wrote the Kosmos Reserves and Resource Manual. Led the production engineering team.
 - Served on many acquisition teams: valuing an asset on its own, then weighing every risk around it, including the people required to execute.
 - Wrote plans of development with partners on multibillion-dollar projects.
 - Government engagement on local content and gas-to-power. Recruited key technical positions for appraisal and development of large fields.
