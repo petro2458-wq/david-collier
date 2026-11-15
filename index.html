@@ -7,33 +7,25 @@
 <title>David C. Collier</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <style>
 /* Layout: a single reading column with a well-log track for the career — depth is the year, deeper is earlier. */
+/* Layout: Timeless Perspective type system on a light page; a well-log track for the career. */
 :root {
-  --bg: #F3F5F3;
+  --bg: #F6F5F2;
   --surface: #FFFFFF;
-  --fg: #16201E;
-  --muted: #55625E;
-  --line: #D5DCD8;
-  --accent: #0D6B5C;
+  --fg: #15161B;
+  --muted: #5A5C68;
+  --line: #DAD8D1;
+  --accent: #B8446B;
   --accent-ink: #FFFFFF;
-  --ochre: #B5781E;
-  --ochre-soft: #F1E2C6;
-  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --ochre: #9C7A1C;
+  --ochre-soft: #EFE6CF;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
   --measure: 66ch;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0F1513; --surface: #161E1B; --fg: #E2E8E5; --muted: #9AA8A3; --line: #2A3531;
-    --accent: #4FB4A0; --accent-ink: #0B1210; --ochre: #D9A548; --ochre-soft: #3A2E18; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0F1513; --surface: #161E1B; --fg: #E2E8E5; --muted: #9AA8A3; --line: #2A3531;
-  --accent: #4FB4A0; --accent-ink: #0B1210; --ochre: #D9A548; --ochre-soft: #3A2E18; color-scheme: dark;
+  color-scheme: light;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -46,39 +38,44 @@ body {
 }
 .wrap { max-width: 1040px; margin: 0 auto; padding-block: 40px 64px; display: grid; gap: 72px; }
 h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
-h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 700; letter-spacing: -0.01em; }
-h2 { font-size: 1.6rem; font-weight: 600; }
-h3 { font-size: 1.1rem; font-weight: 600; }
+h1 { font-size: clamp(2.1rem, 4.4vw, 3.1rem); font-weight: 400; line-height: 1.1; }
+h1 em { color: var(--accent); font-style: italic; display: block; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); font-weight: 400; }
+h3 { font-size: 1.15rem; font-weight: 600; }
 p { margin: 0; max-width: var(--measure); }
 a { color: var(--accent); text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, textarea:focus-visible { outline: 3px solid var(--ochre); outline-offset: 2px; }
-.eyebrow { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+.eyebrow::before { content: ""; width: 32px; height: 1px; background: currentColor; }
+.name-block { display: grid; gap: 6px; }
+.eyebrow.geo { padding-left: 44px; letter-spacing: 0.1em; }
+.eyebrow.geo::before { display: none; }
 .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 section { display: grid; gap: 20px; }
 .section-head { display: grid; gap: 6px; border-top: 1px solid var(--line); padding-top: 20px; }
 
 /* Hero */
-.hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 40px; align-items: start; }
 .hero-text { display: grid; gap: 18px; min-width: 0; }
 .lede { font-size: 1.2rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.btn { font: 600 1rem var(--font-body); padding: 11px 18px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.btn { font: 600 1rem var(--font-body); padding: 13px 22px; border-radius: 0; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
 .btn.ghost { background: transparent; color: var(--accent); }
 .btn:hover { filter: brightness(1.06); }
 .btn[disabled] { opacity: 0.55; cursor: default; }
-.video { aspect-ratio: 16 / 9; max-width: 100%; width: 100%; border-radius: 8px; border: 1px solid var(--line); background:
-  repeating-linear-gradient(0deg, transparent 0 23px, var(--line) 23px 24px), var(--surface);
+.video { aspect-ratio: 16 / 9; max-width: 100%; width: 100%; border-radius: 0; border: 1px solid var(--line); background: var(--surface);
   display: grid; place-items: center; text-align: center; padding: 20px; }
 .video p { color: var(--muted); font-size: 0.95rem; }
 .video strong { display: block; color: var(--fg); font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 4px; }
 
 /* Key figures */
-.figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
-.figure { padding: 18px 20px; display: grid; gap: 4px; border-left: 1px solid var(--line); min-width: 0; }
+.figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.figure { padding: 20px 20px 18px 0; display: grid; gap: 4px; border-left: 1px solid var(--line); min-width: 0; }
+.figure + .figure { padding-left: 20px; }
 .figure:first-child { border-left: 0; }
-.figure .num { font-family: var(--font-mono); font-size: 1.5rem; font-weight: 500; color: var(--fg); }
+.figure .num { font-family: var(--font-mono); font-size: 1.7rem; font-weight: 600; color: var(--fg); }
 .figure .num small { font-size: 0.85rem; color: var(--muted); margin-left: 4px; }
-.figure .what { font-size: 0.92rem; color: var(--muted); line-height: 1.4; }
+.figure .what { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); line-height: 1.4; }
 
 /* Story */
 .story { display: grid; gap: 14px; }
@@ -100,6 +97,9 @@ section { display: grid; gap: 20px; }
 .legend span { display: inline-flex; align-items: center; gap: 8px; }
 .legend i { width: 18px; height: 6px; display: inline-block; }
 
+.acc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
+.acc > div { display: grid; gap: 6px; align-content: start; min-width: 0; padding-top: 14px; border-top: 1px solid var(--line); }
+.acc p { font-size: 1rem; color: var(--muted); }
 /* Skills */
 .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
 .skills > div { display: grid; gap: 8px; align-content: start; min-width: 0; }
@@ -112,11 +112,11 @@ section { display: grid; gap: 20px; }
 blockquote { margin: 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--ochre); font-size: 1.1rem; max-width: var(--measure); }
 
 /* Assistant */
-.chat { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; grid-template-rows: auto minmax(0, 1fr) auto; max-height: 640px; min-height: 420px; }
+.chat { border: 1px solid var(--line); border-radius: 0; background: var(--surface); display: grid; grid-template-rows: auto minmax(0, 1fr) auto; max-height: 640px; min-height: 420px; }
 .chat-head { padding: 14px 18px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
 .chat-head .eyebrow { font-size: 0.72rem; }
 .log-msgs { overflow-y: auto; padding: 18px; display: grid; gap: 14px; align-content: start; }
-.msg { max-width: 62ch; padding: 10px 14px; border-radius: 8px; font-size: 1rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.msg { max-width: 62ch; padding: 10px 14px; border-radius: 0; font-size: 1rem; white-space: pre-wrap; overflow-wrap: anywhere; }
 .msg.bot { background: var(--bg); justify-self: start; }
 .msg.user { background: var(--accent); color: var(--accent-ink); justify-self: end; }
 .msg.note { background: transparent; color: var(--muted); font-size: 0.92rem; padding: 0; }
@@ -138,7 +138,7 @@ footer p { max-width: none; }
   .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .figure:nth-child(3) { border-left: 0; }
   .figure:nth-child(n+3) { border-top: 1px solid var(--line); }
-  .skills, .two-col { grid-template-columns: minmax(0, 1fr); }
+  .skills, .two-col, .acc { grid-template-columns: minmax(0, 1fr); }
   .wrap { gap: 56px; padding-block: 28px 48px; }
 }
 @media (max-width: 460px) {
@@ -154,12 +154,15 @@ footer p { max-width: none; }
 
   <header class="hero">
     <div class="hero-text">
-      <div class="eyebrow">Petroleum Engineer · Breckenridge, Colorado</div>
-      <h1>David C. Collier</h1>
-      <p class="lede">23 years leading production and subsurface teams at Hess and Kosmos Energy, most recently as Vice President, Global Production. I'm returning to petroleum engineering for a long-term role, and I can start right away.</p>
+      <div class="name-block">
+        <div class="eyebrow">David C. Collier · Petroleum Engineer</div>
+        <div class="eyebrow geo">Permian · Gulf of Mexico · Equatorial Guinea · Ghana · Norway</div>
+      </div>
+      <h1>From the Permian to deepwater West Africa. <em>23 years leading production and subsurface teams.</em></h1>
+      <p class="lede">Reservoir engineer to Vice President, Global Production, across 15 years at Hess and 8 at Kosmos Energy. I'm returning to petroleum engineering for a long-term role, and I can start right away.</p>
       <div class="actions">
-        <a class="btn" href="/David_Collier_Resume.pdf" download>Download resume (PDF)</a>
-        <a class="btn ghost" href="#ask">Ask about my experience</a>
+        <a class="btn" href="/David_Collier_Resume.pdf" download>Download resume</a>
+        <a class="btn ghost" href="#ask">Ask about me</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/david-c-collier" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
@@ -173,19 +176,36 @@ footer p { max-width: none; }
 
   <section aria-label="Key figures">
     <div class="figures">
-      <div class="figure"><div class="num">23<small>years</small></div><div class="what">Operator experience, 15 at Hess and 8 at Kosmos Energy</div></div>
-      <div class="figure"><div class="num">40,000<small>bopd</small></div><div class="what">Ceiba Field, where I led daily operations across 30 wells</div></div>
-      <div class="figure"><div class="num">22<small>people</small></div><div class="what">Subsurface team I led to first oil on the Okume Complex</div></div>
-      <div class="figure"><div class="num">900<small>m</small></div><div class="what">Water depth of the Ceiba subsea multiphase pump I helped commission</div></div>
+      <div class="figure"><div class="num">120,000<small>bopd</small></div><div class="what">Hess Africa production I was responsible for, 30% of the company total</div></div>
+      <div class="figure"><div class="num">100,000<small>bopd</small></div><div class="what">Jubilee, Kosmos's only producing asset when I managed it</div></div>
+      <div class="figure"><div class="num">$1B<small>capex</small></div><div class="what">Okume Complex phase I and II, 32 wells, ramped to 80,000 bopd</div></div>
+      <div class="figure"><div class="num">$50M<small>award</small></div><div class="what">Arbitration won over a Ghana rig dispute, plus $14M in legal fees</div></div>
     </div>
   </section>
 
   <section id="story">
     <div class="section-head"><div class="eyebrow">About</div><h2>My story</h2></div>
     <div class="story">
-      <p>I'm a petroleum engineer. I spent 23 years in oil and gas, 15 at Hess and 8 at Kosmos Energy, working the Permian Basin, South Louisiana and the Gulf of Mexico, Equatorial Guinea, Ghana, and Norway. I started as a reservoir and production engineer doing hands-on field work and finished as Vice President, Global Production.</p>
-      <p>At the end of 2019 I left Kosmos on my own terms to trade futures full-time. I worked at it seriously for six years. I had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on. I've decided to return to petroleum engineering, where my experience is deepest, and I'm looking for a role where I can contribute for many years.</p>
+      <p>I'm a petroleum engineer. I spent 23 years in oil and gas, 15 at Hess and 8 at Kosmos Energy, working the Permian Basin, South Louisiana and the Gulf of Mexico, Equatorial Guinea, Ghana, and Norway. I started as a reservoir and production engineer doing hands-on field work and rose to Vice President, Global Production.</p>
+      <p>At the end of 2019 I left Kosmos on my own terms to trade futures full-time. After many years of intense travel, it also let me be present during my kids' most formative years. I worked at trading seriously for six years. I had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on.</p>
+      <p>Now, as my kids get older, I'm looking for a long-term commitment to further my oil and gas career, in the field where my experience is deepest.</p>
       <p>The time away added two things I bring with me: disciplined risk management under uncertainty, and real hands-on skill building working software with AI tools. Working for myself, I put far more time into AI than most full-time employees could, and I'm looking forward to applying it to engineering work.</p>
+    </div>
+  </section>
+
+
+  <section id="accomplishments">
+    <div class="section-head"><div class="eyebrow">Selected work</div><h2>Key accomplishments</h2></div>
+    <div class="acc">
+      <div><h3>Won a $50M arbitration in London</h3><p>Over five years I managed every partner and government communication on a Ghana rig dispute, then testified in a two-week arbitration. Kosmos was awarded $50M plus $14M in legal fees.</p></div>
+      <div><h3>Reset the FPSO contract with MODEC</h3><p>As VP, Global Production, I renegotiated the FPSO operations contract to tie the contractor's incentives to production and safety performance for the first time.</p></div>
+      <div><h3>Kept Jubilee producing at 100,000 bopd</h3><p>As Jubilee Unit Asset Manager, I set budgets and influenced the drilling program on Kosmos's only producing asset, and owned the gas-handling solution when re-injection became a reservoir constraint before gas export was ready.</p></div>
+      <div><h3>Helped sanction and deliver TEN</h3><p>I was integral to sanctioning the TEN plan of development in Ghana, which reached first oil in mid-2016.</p></div>
+      <div><h3>Built the Kosmos reserves system</h3><p>I created and implemented the company's global reserves management system and wrote its Reserves and Resource Manual for PRMS and SEC reporting.</p></div>
+      <div><h3>Influenced BP on Valhall</h3><p>As the sole partner on Hess's largest asset, I built a 25-person team in Norway, recruiting 10 of them, to influence $600MM a year of capital and the depletion of about 1 billion remaining barrels.</p></div>
+      <div><h3>Ran Hess's most profitable business</h3><p>As Africa Subsurface Manager I was responsible for 120,000 bopd across Algeria, Libya, Equatorial Guinea, and Gabon, $380MM of net capital, and 39 geoscientists and engineers. I led self-certification of the Africa reserves in 2009.</p></div>
+      <div><h3>Managed a waterflood in Lea County, New Mexico</h3><p>My first engineering job: reservoir optimization of 170 producing wells making 3,600 bopd, with 100 injection wells putting away 10,000 bwpd, in the North Monument Grayburg / San Andres Unit. Proposals, forecasts, economics, and reserves.</p></div>
+      <div><h3>Fixed subsea pump failures at Ceiba</h3><p>I worked with FRAMO in Bergen on root causes of early failures across eleven subsea multiphase pumps, and led a 20-person, 30-day vessel campaign for the field's baseline subsea inspection.</p></div>
     </div>
   </section>
 
@@ -198,37 +218,29 @@ footer p { max-width: none; }
     </div>
     <div class="log" role="list">
       <div class="depth">2020–26</div><div class="track trading"></div>
-      <div class="entry" role="listitem"><h3>Futures Trader, DC Trading</h3><div class="org">Colorado</div><p>Traded index, gold, and currency futures with a rules-based process focused on risk management and position sizing.</p></div>
-
+      <div class="entry" role="listitem"><h3>Futures Trader, DC Trading</h3><div class="org">Colorado · Feb 2020 to 2026</div><p>Traded index, gold, and currency futures with a rules-based process focused on risk management and position sizing.</p></div>
       <div class="depth">2018</div><div class="track kosmos"></div>
-      <div class="entry" role="listitem"><h3>Vice President, Global Production</h3><div class="org">Kosmos Energy · Dallas, TX · to end 2019</div><p>Reported to the board HS&amp;E subcommittee on performance, integrity, and reliability of two FPSOs, based on monthly site audits I conducted.</p></div>
-
+      <div class="entry" role="listitem"><h3>Vice President, Global Production</h3><div class="org">Kosmos Energy · Dallas, TX · Jul 2018 to Nov 2019</div><p>Head of production across Ghana, Equatorial Guinea, and the Gulf of Mexico, with operations and HS&amp;E accountability to the executive team and board. Reset the FPSO operations contract with MODEC.</p></div>
       <div class="depth">2014</div><div class="track kosmos"></div>
-      <div class="entry" role="listitem"><h3>Vice President, Ghana Asset</h3><div class="org">Kosmos Energy · Dallas, TX</div><p>Led the Ghana Business Unit, the company's largest producing asset, working with partners and government on a large drilling and production program.</p></div>
-
+      <div class="entry" role="listitem"><h3>Vice President, Ghana Asset</h3><div class="org">Kosmos Energy · Dallas, TX · May 2014 to Jul 2018</div><p>Integrated the Ghana business plan: production forecasting, rigs, capital, operating cost, and facility performance. Company representative on management committees and with government. Won a $50M arbitration award.</p></div>
       <div class="depth">2012</div><div class="track kosmos"></div>
-      <div class="entry" role="listitem"><h3>Reservoir Engineering and Production Director</h3><div class="org">Kosmos Energy · Dallas, TX</div><p>Led the production engineering team and wrote the Kosmos Reserves and Resource Manual for PRMS and SEC reporting.</p></div>
-
+      <div class="entry" role="listitem"><h3>Reservoir Engineering and Production Director</h3><div class="org">Kosmos Energy · Dallas, TX · Apr 2012 to May 2014</div><p>Jubilee Unit Asset Manager at 100,000 bopd. Built the global reserves management system. Helped sanction the TEN plan of development.</p></div>
       <div class="depth">2010</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Production Manager</h3><div class="org">Hess Corporation · Stavanger, Norway</div></div>
-
+      <div class="entry" role="listitem"><h3>Production Manager, Valhall Field</h3><div class="org">Hess Norge · Stavanger, Norway · May 2010 to Apr 2012</div><p>Led 25 subsurface and operations staff influencing operator BP on drilling, three new platforms, workovers, and decommissioning. Management Committee member for Valhall and other Norwegian licenses.</p></div>
       <div class="depth">2008</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Africa Subsurface Manager</h3><div class="org">Hess Corporation · Houston, TX</div></div>
-
+      <div class="entry" role="listitem"><h3>Africa Subsurface Manager</h3><div class="org">Hess Corporation · Houston, TX · Apr 2008 to May 2010</div><p>120,000 bopd, 30% of Hess production, and $380MM of net capital across four countries. Talent management for 39 geoscientists and engineers.</p></div>
       <div class="depth">2006</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Subsurface Team Leader, Okume Complex</h3><div class="org">Hess Corporation · Houston, TX</div><p>Led a subsurface team of 22 to identify drilling locations and develop the field with 2 rigs, through to first oil.</p></div>
-
+      <div class="entry" role="listitem"><h3>Subsurface Team Leader, Okume Complex</h3><div class="org">Hess Corporation · Houston, TX · Aug 2006 to Apr 2008</div><p>Phase I and II development: 32 wells, $1B of capital, two TLPs and three satellite platforms, peak of 80,000 bopd. Led a subsurface team of 22.</p></div>
       <div class="depth">2005</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Operations Team Leader</h3><div class="org">Hess Corporation · Equatorial Guinea</div><p>Daily operations for the 40,000 bopd Ceiba Field, maintaining water injection and production from 30 wells.</p></div>
-
+      <div class="entry" role="listitem"><h3>Operations Team Leader</h3><div class="org">Hess Corporation · Equatorial Guinea · Dec 2005 to Aug 2006</div><p>Led national and expatriate engineers on daily field management. Built a deferred-oil tracker and a remote monitoring system for well and facility performance.</p></div>
       <div class="depth">2003</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Production/Operations Engineer, Ceiba Field</h3><div class="org">Hess Corporation · Equatorial Guinea</div><p>Part of the team that installed, commissioned, and operated the subsea multiphase pump, boosting flow from the seabed at 900 meters to the FPSO.</p></div>
-
+      <div class="entry" role="listitem"><h3>Production/Operations Engineer, Ceiba Field</h3><div class="org">Hess Corporation · Equatorial Guinea · May 2003 to Dec 2005</div><p>40,000 bopd and 130,000 bwpd of injection from 30 subsea wells to an FPSO. Subsea fieldwork including ROV operations, tree installations, and multiphase pump repair and retrieval.</p></div>
       <div class="depth">2001</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Production/Operations Engineer, South Louisiana / Gulf of Mexico</h3><div class="org">Hess Corporation · Louisiana</div><p>Production and completions engineering, including rig workovers and recompletions.</p></div>
-
+      <div class="entry" role="listitem"><h3>Production/Operations Engineer, South Louisiana</h3><div class="org">Hess Corporation · Houston, TX · Mar 2001 to May 2003</div><p>100 onshore and offshore wells producing 52 MMcfed to 14 facilities. Added 5 MMcfed over decline with $1.5MM of workovers.</p></div>
       <div class="depth">1998</div><div class="track"></div>
-      <div class="entry" role="listitem"><h3>Reservoir Engineer, Permian Basin</h3><div class="org">Hess Corporation · Houston, TX</div></div>
+      <div class="entry" role="listitem"><h3>Reservoir Engineer, Permian Basin</h3><div class="org">Hess Corporation · Houston, TX · Jun 1998 to Mar 2001</div><p>Managed the North Monument Grayburg / San Andres waterflood in Lea County, New Mexico: 170 producers and 100 injectors. Support for the Seminole San Andres Unit CO2 EOR project.</p></div>
+      <div class="depth">1996</div><div class="track"></div>
+      <div class="entry" role="listitem"><h3>Engineering Intern, two summers</h3><div class="org">Merit Energy Corporation · Texas · 1996 to 1997</div><p>Field and office work on a waterflooded oil field and a South Texas gas field.</p></div>
     </div>
   </section>
 
@@ -256,10 +268,10 @@ footer p { max-width: none; }
       <div>
         <h3>Reserves and commercial</h3>
         <ul>
-          <li>PRMS and SEC reserves; wrote the Kosmos Reserves and Resource Manual</li>
+          <li>PRMS and SEC reserves; built the Kosmos global reserves management system</li>
           <li>Year-end reserves process with banks and independent reserve auditors</li>
           <li>Work program and budget planning, economics</li>
-          <li>Acquisition evaluation teams; plans of development with partners</li>
+          <li>Contract and arbitration work; plans of development with partners</li>
         </ul>
       </div>
       <div>
@@ -336,6 +348,11 @@ footer p { max-width: none; }
         <button class="btn" type="submit" id="send">Ask</button>
       </form>
     </div>
+  </section>
+
+  <section id="references">
+    <div class="section-head"><div class="eyebrow">References</div><h2>References</h2></div>
+    <p>Professional references from my time at Hess and Kosmos Energy are available on request. Email me and I'll put you in touch directly.</p>
   </section>
 
   <section id="contact">
