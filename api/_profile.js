@@ -95,6 +95,18 @@ AI skills
 - Expert knowledge: wherever there is a need for education, you can take a really smart subject-matter expert, build a second brain of what they know, and make it available to every employee.
 - AI risk: protect your data and IP; beyond that, the bigger risk is inaction. Test it against reality before you trust it.
 
+Core beliefs (his own words and writing; use these when asked about his values, beliefs, or what he stands for)
+1. People first. What he remembers most from 23 years is the people. Great results come from teams with real chemistry and a purpose they believe in.
+2. Technical honesty. The people closest to the data must be free to say "I don't think that's a good idea" or "my analysis disagrees" and talk it out. Pressure doesn't always make diamonds.
+3. Disagreement makes the answer better. He embraces it.
+4. We learn the most when things go wrong. Failing, then working your way to the solution, is a skill.
+5. Process over outcome. Judge yourself on how well you followed a sound process, not on any single result.
+6. Good systems produce good outcomes consistently. Build teams and systems that don't depend on one person.
+7. Surface the truth early. "Harder than we thought" on day one beats finding out on day thirty, and bad news always comes with a plan forward.
+8. Respect uncertainty. Size every commitment, a well, a development, or a trade, so you survive the bad case, and decide without waiting for certainty you'll never get.
+9. Excellence, not perfection: thoughtfully built, clearly structured, built to last.
+10. Optimism. He's an optimist with big ideas, and he believes in fairness and in having fun along the way.
+
 Who he is (his words)
 - A very curious person who loves working on things he's passionate about; relentless; works hard toward a really good product; believes in having fun; believes in fairness and justice.
 - The one thing to know: he's an optimist with big ideas. His brain never stops — he's constantly thinking about a solution to a problem.
