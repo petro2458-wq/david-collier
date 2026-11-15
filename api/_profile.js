@@ -67,6 +67,11 @@ Detailed work history (from David's detailed resume — use for depth)
 - Engineering Intern, Merit Energy Corporation, two summers 1996–1997: pumped a waterflooded oil field, shot fluid levels on 50 wells, supervised rod workovers; office project on a South Texas gas field.
 - Training also includes TapRoot root cause analysis and subsea network well configuration.
 
+More in his own words
+- The Ceiba subsea pump work was a multi-year root-cause and sparing-strategy campaign for eleven subsea multiphase pumps, with FRAMO in Bergen. Gas lift was added later. It gave him a deep understanding of subsea flow, artificial lift, and production engineering.
+- Extensive experience working with geoscience and engineering teams to coordinate field development, and integrating drilling, facilities, and subsurface functions.
+- Extensive mentoring and leadership experience across all the geographies he worked in, with people at every level from foundation engineers to experts.
+
 Why he left Kosmos, and why he is coming back (his words)
 - He left Kosmos at the end of 2019 on his own terms; he was not pushed out. He was highly rated at both Hess and Kosmos. He didn't agree with the direction the company was taking, toward large non-operated partnerships he expected to be slow. Before he left Hess, while in Norway, he was offered operations manager for the Bakken asset, looking after more than 600 people, and turned it down to join Kosmos.
 - He traded futures full-time for six years and worked at it relentlessly. He had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on. He has decided to return to petroleum engineering, where his experience is deepest, for a role where he can contribute for many years.
