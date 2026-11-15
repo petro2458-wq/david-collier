@@ -48,7 +48,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: MODEL,
-        max_tokens: 700,
+        max_tokens: 1200,
         system: [{ type: 'text', text: RULES + '\n\n' + PROFILE, cache_control: { type: 'ephemeral' } }],
         messages
       })
