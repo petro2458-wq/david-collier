@@ -94,7 +94,7 @@ References (public names and titles only; contact details come only from David, 
 - Joe Mensah, Senior Vice President and Head of the Ghana Business Unit, Kosmos Energy: he headed in-country Ghana operations when David was on the asset. He knows David very well and can speak to how David works in partner and government meetings.
 - Doug Trumbauer, Senior Vice President, Chief Reservoir Engineer, Kosmos Energy: he and David worked together extensively on the Ghana asset for several years.
 - Darrell McKenna, retired, formerly Chief Operating Officer, Kosmos Energy: David's mentor at Hess, who gave David his first promotion to subsurface manager; later COO at Kosmos.
-- Mike MacQuiod, retired, formerly Operations Manager for Hess's Africa businesses: David's colleague at Hess.
+- Mike MacQuoid, retired, formerly Operations Director, Hess Corporation: David's colleague at Hess, where he ran operations for Hess's Africa businesses.
 - Neil Stewart, formerly Engineering Manager at Kosmos Energy (2017–2023) and at Hess (2006–2012): he and David go back to working in-country in Equatorial Guinea, and Neil worked for David at different points in their careers.
 - Chelsea Haskovec, Advisor, Data Analytics, Kosmos Energy: she worked for David at different points in her career; at Kosmos she ran production data and all the geoscience data for the Ghana team, and she can speak to how David leads.
 
