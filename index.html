@@ -375,8 +375,15 @@ footer p { max-width: none; }
   const copyBtn = document.getElementById('copy-email');
   copyBtn.addEventListener('click', () => {
     const text = document.getElementById('email').textContent;
-    const done = () => { copyBtn.textContent = 'Copied'; setTimeout(() => copyBtn.textContent = 'Copy email', 1600); };
-    if (navigator.clipboard) navigator.clipboard.writeText(text).then(done).catch(() => {});
+    const show = (label) => { copyBtn.textContent = label; setTimeout(() => copyBtn.textContent = 'Copy email', 2200); };
+    const fallback = () => {
+      const r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      let ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+      show(ok ? 'Copied' : 'Selected: press Ctrl/Cmd+C');
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(() => show('Copied')).catch(fallback);
+    else fallback();
   });
 
   const msgs = document.getElementById('msgs');
