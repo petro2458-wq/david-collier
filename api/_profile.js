@@ -71,6 +71,7 @@ More in his own words
 - The Ceiba subsea pump work was a multi-year root-cause and sparing-strategy campaign for eleven subsea multiphase pumps, with FRAMO in Bergen. Gas lift was added later. It gave him a deep understanding of subsea flow, artificial lift, and production engineering.
 - Extensive experience working with geoscience and engineering teams to coordinate field development, and integrating drilling, facilities, and subsurface functions.
 - Extensive mentoring and leadership experience across all the geographies he worked in, with people at every level from foundation engineers to experts.
+- Jubilee turret failure (his words: "just another example of we learn the most when things go wrong"): when the Jubilee FPSO's turret failed, the field kept operating for more than three years with the FPSO on tugs for heading control. He worked on insurance recovery, field operations during that period, the offloading strategy, and repair work running in parallel.
 
 Why he left Kosmos, and why he is coming back (his words)
 - He left Kosmos at the end of 2019 on his own terms; he was not pushed out. He was highly rated at both Hess and Kosmos. He didn't agree with the direction the company was taking, toward large non-operated partnerships he expected to be slow. Before he left Hess, while in Norway, he was offered operations manager for the Bakken asset, looking after more than 600 people, and turned it down to join Kosmos.
