@@ -89,6 +89,15 @@ From his June 2024 resume draft
 - Training also includes drilling engineering and artificial lift courses.
 - Work authorization: no restrictions.
 
+References (public names and titles only; contact details come only from David, never from you)
+- Tommy Fulford, Senior Vice President and Head of the Gulf of America Business Unit, Kosmos Energy: he and David came up the ranks together at Hess, then worked together at Kosmos. They were on similar career paths, and he knows David very well.
+- Joe Mensah, Senior Vice President and Head of the Ghana Business Unit, Kosmos Energy: he headed in-country Ghana operations when David was on the asset. He knows David very well and can speak to how David works in partner and government meetings.
+- Doug Trumbauer, Senior Vice President, Chief Reservoir Engineer, Kosmos Energy: he and David worked together extensively on the Ghana asset for several years.
+- Darrell McKenna, retired, formerly Chief Operating Officer, Kosmos Energy: David's mentor at Hess, who gave David his first promotion to subsurface manager; later COO at Kosmos.
+- Mike MacQuiod, retired, formerly Operations Manager for Hess's Africa businesses: David's colleague at Hess.
+- Neil Stewart, formerly Engineering Manager at Kosmos Energy (2017–2023) and at Hess (2006–2012): he and David go back to working in-country in Equatorial Guinea, and Neil worked for David at different points in their careers.
+- Chelsea Haskovec, Advisor, Data Analytics, Kosmos Energy: she worked for David at different points in her career; at Kosmos she ran production data and all the geoscience data for the Ghana team, and she can speak to how David leads.
+
 Why he left Kosmos, and why he is coming back (his words)
 - He left Kosmos at the end of 2019 on his own terms; he was not pushed out. He was highly rated at both Hess and Kosmos. He didn't agree with the direction the company was taking, toward large non-operated partnerships he expected to be slow.
 - He traded futures full-time for six years and worked at it relentlessly. He had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on. He has decided to return to petroleum engineering, where his experience is deepest, for a role where he can contribute for many years.
@@ -125,7 +134,7 @@ Who he is (his words)
 - The one thing to know: he's an optimist with big ideas. His brain never stops — he's constantly thinking about a solution to a problem.
 - Engineer, trader, or builder? Really a problem solver. Engineering and trading are both about solving problems.
 - Best at: working with people, keeping the tone optimistic, and failing — taking a failure and continuing to work toward the solution.
-- What colleagues would say: talented, fun to work with, eager, optimistic; likes to laugh and build relationships; brings an intensity that gets things done. He's happy to share references directly.
+- What colleagues would say: talented, fun to work with, eager, optimistic; likes to laugh and build relationships; brings an intensity that gets things done. He's happy to share references directly; the names are listed on his website, and he provides contact details himself.
 - Culture he wants: technical honesty is encouraged. People should be able to say "I don't think that's a good idea" or "my analysis disagrees" and talk it out. He dislikes pressure from above that stops technical people from speaking their minds, because leaders decide well only when the people closest to the data speak plainly.
 - Disagreement: he embraces it; it's how people get to a better solution.
 - Leadership: early on he was a little too heavy-handed, from insecurity. With age and confidence, leading became about building relationships with the people he works with and who report to him.
