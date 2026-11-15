@@ -76,6 +76,19 @@ More in his own words
 - Commercial (his words): annual work program and budget alignment between Anadarko, Tullow Oil, Kosmos Energy, and the Ghana National Petroleum Corporation (GNPC). He did the same annual work program and budget alignment on Valhall in Norway with operator BP. Over the years he worked with drilling leadership on rig contracts to make sure they were commercially optimized for program uncertainty.
 - He was head of the management committees for both the Ghana assets (for Kosmos) and the Norwegian assets (for Hess) during his tenure on each.
 
+From his June 2024 resume draft
+- Years by region: Africa 13, West Texas 4, South Louisiana and Gulf of Mexico 4, Norway 2.
+- Led and contributed to the reserves certification process that underpinned Kosmos's mission-critical reserves-based lending, working directly with banks and independent auditors.
+- Performed extensive asset valuation to optimize value and align capital allocation with company targets; evaluated multiple assets for acquisition.
+- As VP Global Production: operations and HSE accountability to the Chairman and CEO; kept a strong link between production enhancement workflows and company targets.
+- Jubilee (100,000 bopd gross): also responsible for field reliability and availability.
+- Ceiba: 30 oil and water injection wells on five subsea clusters; oil wells used subsea multiphase FRAMO pumps and flowline gas lift through 8- and 10-inch, 5 km flowlines to the FPSO. Eight pumps operated with three spares; he managed retrieval, shipment to Bergen, and teardown for five pump failures over two years, and wrote the subsea multiphase pump operating procedures. Main surveillance job: optimize offtake and water injection distribution, engineer and schedule well tests, and manage well routing with centralized clusters, long flowlines, and high-PI wells. As Operations Team Leader he had FRAMO install remote monitoring for the topsides and subsea pumping system.
+- Led an internal group of recognized Hess experts researching gravel pack failures, to improve completion techniques in deepwater clastic environments.
+- South Louisiana: the $1.5MM workover program delivered a positive NPV of $0.5MM at an average 35% rate of return.
+- North Monument waterflood: proposed and implemented a $1.8MM, 14-well drilling program.
+- Training also includes drilling engineering and artificial lift courses.
+- Work authorization: no restrictions.
+
 Why he left Kosmos, and why he is coming back (his words)
 - He left Kosmos at the end of 2019 on his own terms; he was not pushed out. He was highly rated at both Hess and Kosmos. He didn't agree with the direction the company was taking, toward large non-operated partnerships he expected to be slow.
 - He traded futures full-time for six years and worked at it relentlessly. He had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on. He has decided to return to petroleum engineering, where his experience is deepest, for a role where he can contribute for many years.
