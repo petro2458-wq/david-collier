@@ -40,6 +40,7 @@ Position history
 - Engineering intern, Merit Energy Corporation, 2 summers (1 field, 1 office), 1996–1997.
 
 Engineering experience
+- About 70% of his career was on operated properties and 30% on non-operated properties, the latter in unusual situations where the asset was critical to Hess's and Kosmos's success (for example Valhall, operated by BP, which was Hess's largest asset; and Jubilee in Ghana, Kosmos's only producing asset at the time).
 - Early career as an individual contributor: reservoir and production engineer in the Permian; production and completions engineer in South Louisiana, including hands-on rig workovers and recompletions.
 - Ceiba Field (deepwater, Equatorial Guinea): part of the team that installed, commissioned, and operated the subsea multiphase pump facility, boosting multiphase flow from the seabed at 900 meters to the FPSO. Later Operations Team Leader for the 40,000 bopd field, responsible for daily operations and water injection and production from 30 wells.
 - Okume Complex: led a subsurface team of 22 to identify drilling locations and develop the field with 2 rigs, through to first oil.
