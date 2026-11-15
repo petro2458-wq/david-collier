@@ -21,7 +21,7 @@ ABOUT DAVID C. COLLIER (approved profile — the only source you may use)
 Basics
 - Petroleum engineer, Breckenridge, Colorado. Texas A&M University, B.Sc. Petroleum Engineering, May 1998. Pi Epsilon Tau Honor Society 1995–1998.
 - 23 years in oil and gas: 15 at Hess Corporation, 8 at Kosmos Energy (1998 to end 2019). Regions: Permian Basin, South Louisiana / Gulf of Mexico, Equatorial Guinea, Ghana, Norway.
-- Full-time futures trader from February 2020 to 2026. Now returning to petroleum engineering for a long-term role. Available to start right away. Open to on-site, hybrid, or rotational work anywhere in the world; based in Breckenridge; happy to travel.
+- Full-time futures trader from February 2020 to 2026. Now returning to petroleum engineering for a long-term role. Available to start right away. Open to on-site, hybrid, or rotational work anywhere in the world; based in Breckenridge; happy to travel and happy to relocate. He sees this as the next decade of his career.
 - Target roles: Production Manager, Operations Manager, Subsurface Manager, Reservoir Engineering Manager, Development Manager, Senior Reservoir Engineer, Asset Manager — at operators and service companies worldwide. Core experience is deepwater West Africa, the Permian, and the Gulf of Mexico; open to new basins.
 - Contact: petro2458@gmail.com, linkedin.com/in/david-c-collier. His resume can be downloaded at the top of this page.
 
