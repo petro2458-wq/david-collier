@@ -104,6 +104,21 @@ section { display: grid; gap: 20px; }
 .acc > div { display: grid; gap: 6px; align-content: start; min-width: 0; padding-top: 14px; border-top: 1px solid var(--line); }
 .acc p { font-size: 1rem; color: var(--muted); }
 .ref-title { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); line-height: 1.5; }
+.ch-bar { display: flex; gap: 4px; height: 26px; font-family: var(--font-mono); font-size: 0.72rem; }
+.ch-bar span { display: grid; place-items: center; color: var(--accent-ink); background: var(--accent); }
+.ch-bar span:nth-child(1) { opacity: 0.55; } .ch-bar span:nth-child(2) { opacity: 0.75; }
+.ch-bar span.trade { background: repeating-linear-gradient(135deg, rgba(120,120,120,0.28) 0 6px, transparent 6px 10px); color: var(--fg); font-weight: 600; border: 1px solid rgba(120,120,120,0.4); }
+.ch-bar span.final { background: transparent; border: 2px dashed var(--accent); color: var(--accent); font-weight: 600; }
+.chapters { list-style: none; margin: 0; padding: 0; display: grid; }
+.chapter { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 20px 0; border-top: 1px solid var(--line); }
+.ch-meta { display: grid; gap: 4px; align-content: start; }
+.ch-num { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.ch-years { font-family: var(--font-mono); font-size: 0.9rem; color: var(--muted); }
+.ch-body { display: grid; gap: 6px; min-width: 0; }
+.ch-body h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; }
+.ch-sub { font-style: italic; color: var(--accent); font-family: var(--font-display); }
+.chapter.final .ch-body h3 { color: var(--accent); }
+@media (max-width: 600px) { .chapter { grid-template-columns: minmax(0, 1fr); gap: 8px; } }
 /* Skills */
 .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
 .skills > div { display: grid; gap: 8px; align-content: start; min-width: 0; }
@@ -214,13 +229,33 @@ footer p { max-width: none; }
   </section>
 
   <section id="story">
-    <div class="section-head"><div class="eyebrow">About</div><h2>My story</h2></div>
-    <div class="story">
-      <p>I'm a petroleum engineer. I spent 23 years in oil and gas, 15 at Hess and 8 at Kosmos Energy, including 13 years on Africa, 4 in West Texas, 4 in South Louisiana and the Gulf of Mexico, and 2 in Norway. I started as a reservoir and production engineer doing hands-on field work and rose to Vice President, Global Production. About 70% of my career was on operated properties. The other 30% was non-operated, in unusual situations where the asset was critical to the company's success, such as Valhall for Hess and Jubilee for Kosmos.</p>
-      <p>At the end of 2019 I left Kosmos on my own terms to trade futures full-time. After many years of intense travel, it also let me be present during my kids' most formative years. I worked at trading seriously for six years. I had strong periods, including 2025 and early 2026, but the results were not consistent enough to build a long-term career on.</p>
-      <p>Now, as my kids get older, I'm looking for a long-term commitment to further my oil and gas career, in the field where my experience is deepest.</p>
-      <p>The time away added three things I bring with me. First, a deep belief that a simple, low-friction, low-bureaucracy process, applied consistently, delivers excellent results. Second, a strong sense of self-accountability: when things don't go as planned, I look inward first and make adjustments. Third, balanced AI skills. AI can accelerate parts of the work, but human oversight is critical.</p>
+    <div class="section-head"><div class="eyebrow">About</div><h2>My story, in chapters</h2></div>
+    <p>23 years in oil and gas, 15 at Hess and 8 at Kosmos Energy: 13 years on Africa, 4 in West Texas, 4 in South Louisiana and the Gulf of Mexico, and 2 in Norway. I think about my career in chapters.</p>
+    <div class="ch-bar" aria-hidden="true">
+      <span style="flex:7">1</span><span style="flex:5">2</span><span style="flex:9">3</span><span class="trade" style="flex:6">4</span><span class="final" style="flex:10">5</span>
     </div>
+    <ol class="chapters">
+      <li class="chapter">
+        <div class="ch-meta"><span class="ch-num">Chapter 1</span><span class="ch-years">1998–2005</span></div>
+        <div class="ch-body"><h3>Foundation</h3><div class="ch-sub">Learning the craft</div><p>Hands-on reservoir and production engineering: reservoir engineering on a Permian waterflood, workovers and gas lift in South Louisiana, then starting up 30,000+ bopd deepwater wells at Ceiba and leading its subsea pump campaign. This is where my technical depth comes from.</p></div>
+      </li>
+      <li class="chapter">
+        <div class="ch-meta"><span class="ch-num">Chapter 2</span><span class="ch-years">2005–2010</span></div>
+        <div class="ch-body"><h3>Building and leading as the operator</h3><div class="ch-sub">Delivering assets</div><p>I ran daily operations at Ceiba, took the Okume Complex to first oil, and led 120,000 bopd and 39 geoscientists and engineers across Hess's Africa business. As the operator, the results were ours to deliver.</p></div>
+      </li>
+      <li class="chapter">
+        <div class="ch-meta"><span class="ch-num">Chapter 3</span><span class="ch-years">2010–2019</span></div>
+        <div class="ch-body"><h3>Influencing from the partner's seat</h3><div class="ch-sub">Moving outcomes I didn't control</div><p>On Valhall with BP, and on Jubilee and TEN in Ghana, I built our own technical case to influence the operator, headed our representation on the management committees, and worked closely with governments and partners. Outcomes came from preparation and persuasion. Overall, about 70% of my career was on operated properties; the rest was on non-operated assets critical to the company.</p></div>
+      </li>
+      <li class="chapter trade">
+        <div class="ch-meta"><span class="ch-num">Chapter 4</span><span class="ch-years">2020–2026</span></div>
+        <div class="ch-body"><h3>Trading</h3><div class="ch-sub">Full-time, not time off</div><p>I left Kosmos at the end of 2019 on my own terms to trade full-time. COVID hit weeks later, and I went all in, building trading systems from scratch. I had strong periods, including 2025 and early 2026, but the results weren't consistent enough to build the next decade on. After years of intense travel, it also let me be present for my kids' most formative years. I came out of it with three things: a deep belief that a simple, low-friction, low-bureaucracy process, applied consistently, delivers excellent results; a strong sense of self-accountability, looking inward first when things don't go to plan; and balanced AI skills, where AI accelerates the work but human oversight is critical.</p></div>
+      </li>
+      <li class="chapter final">
+        <div class="ch-meta"><span class="ch-num">Chapter 5</span><span class="ch-years">The next decade</span></div>
+        <div class="ch-body"><h3>The final chapter</h3><div class="ch-sub">Putting it all together with an operator</div><p>Now, as my kids get older, I'm bringing every skill from the first four chapters back to an operator for the next ten years. It's a second run at the marathon, and this time I know how to run it.</p></div>
+      </li>
+    </ol>
   </section>
 
 
