@@ -2,6 +2,9 @@
 // Needs the ANTHROPIC_API_KEY environment variable set in Vercel.
 // Optional: ANTHROPIC_MODEL (defaults to claude-sonnet-5-5).
 import { RULES, PROFILE } from './_profile.js';
+import { logTurn } from './_store.js';
+
+const GAP_RULE = '\n\nLearning loop (internal; never mention it): if the profile does not contain what you need to answer the latest question well, so you had to answer generally, deflect, or say you don\'t know, add one final line in exactly this form: [[GAP: a few words naming the missing information]]. It is removed before the visitor sees your reply. Otherwise add nothing.';
 
 const MODEL = process.env.ANTHROPIC_MODEL || 'claude-sonnet-5-5';
 const MAX_TURNS = 12;
@@ -49,7 +52,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: MODEL,
         max_tokens: 1200,
-        system: [{ type: 'text', text: RULES + '\n\n' + PROFILE, cache_control: { type: 'ephemeral' } }],
+        system: [{ type: 'text', text: RULES + GAP_RULE + '\n\n' + PROFILE, cache_control: { type: 'ephemeral' } }],
         messages
       })
     });
@@ -58,7 +61,18 @@ export default async function handler(req, res) {
       console.error('anthropic_error', r.status, data && data.error);
       return res.status(502).json({ error: 'upstream' });
     }
-    const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('').trim();
+    const raw = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
+    const m = raw.match(/\[\[\s*GAP:\s*([^\]]*)\]\]/i);
+    const text = raw.replace(/\[\[\s*GAP:[^\]]*\]\]/gi, '').trim();
+    await logTurn({
+      t: Date.now(),
+      sid: typeof body.sid === 'string' ? body.sid.slice(0, 40) : '',
+      country: req.headers['x-vercel-ip-country'] || '',
+      turn: messages.filter(x => x.role === 'user').length,
+      q: messages[messages.length - 1].content,
+      a: text,
+      gap: m ? m[1].trim().slice(0, 200) : ''
+    });
     return res.status(200).json({ text });
   } catch (e) {
     console.error('chat_failed', e);

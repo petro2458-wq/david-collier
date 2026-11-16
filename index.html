@@ -217,7 +217,7 @@ footer p { max-width: none; }
         <button class="btn" type="submit" id="send">Ask</button>
       </form>
     </div>
-    <p class="bot-note">Hi, I built this from my "second brain": years of my own notes, writing, and experience. It knows my career, my beliefs, and how I think. Use it to get to know me better, or <a href="#contact">reach out to me directly</a> anytime.</p>
+    <p class="bot-note">Hi, I built this from my "second brain": years of my own notes, writing, and experience. It knows my career, my beliefs, and how I think. Use it to get to know me better, or <a href="#contact">reach out to me directly</a> anytime. Questions are saved so I can keep improving the answers.</p>
     </div>
   </header>
 
@@ -492,6 +492,7 @@ footer p { max-width: none; }
 </div>
 
 <script>
+const SID = (() => { try { let v = sessionStorage.getItem('sid'); if (!v) { v = Math.random().toString(36).slice(2, 12); sessionStorage.setItem('sid', v); } return v; } catch { return Math.random().toString(36).slice(2, 12); } })();
 (() => {
   const copyBtn = document.getElementById('copy-email');
   copyBtn.addEventListener('click', () => {
@@ -552,7 +553,7 @@ footer p { max-width: none; }
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: history.slice(-12) })
+        body: JSON.stringify({ messages: history.slice(-12), sid: SID })
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.text) throw new Error(data.error || 'error');
