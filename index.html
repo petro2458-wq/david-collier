@@ -94,6 +94,7 @@ section { display: grid; gap: 20px; }
 .figure:first-child { border-left: 0; }
 .figure .num { font-family: var(--font-mono); font-size: 1.7rem; font-weight: 600; color: var(--fg); }
 .figure .num small { font-size: 0.85rem; color: var(--muted); margin-left: 4px; }
+.figure .disc { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
 .figure .what { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); line-height: 1.4; }
 
 /* Story */
@@ -252,10 +253,10 @@ sync();b.addEventListener('click',function(){var d=r.dataset.theme!=='dark';if(d
 
   <section aria-label="Key figures">
     <div class="figures">
-      <div class="figure"><div class="num">120,000<small>bopd</small></div><div class="what">Hess Africa production I was responsible for, 30% of the company total</div></div>
-      <div class="figure"><div class="num">30,000+<small>bopd</small></div><div class="what">Productivity of the high-PI deepwater wells I personally started up</div></div>
-      <div class="figure"><div class="num">$1B<small>capex</small></div><div class="what">Okume Complex phase I and II, 32 wells, ramped to 80,000 bopd</div></div>
-      <div class="figure"><div class="num">39<small>people</small></div><div class="what">Geoscientists and engineers I led as Hess Africa Subsurface Manager</div></div>
+      <div class="figure"><div class="disc">Production &amp; operations</div><div class="num">30,000+<small>bopd</small></div><div class="what">High-PI deepwater wells I personally started up</div></div>
+      <div class="figure"><div class="disc">Subsurface &amp; development</div><div class="num">$1B<small>capex</small></div><div class="what">Okume Complex: 32 wells, to and through first oil, ramped to 80,000 bopd</div></div>
+      <div class="figure"><div class="disc">Leadership</div><div class="num">120,000<small>bopd</small></div><div class="what">Hess Africa, 30% of company production, with 39 geoscientists and engineers</div></div>
+      <div class="figure"><div class="disc">Partner &amp; commercial</div><div class="num">$600MM<small>a year</small></div><div class="what">Valhall capital influenced as BP's partner, on Hess's largest asset</div></div>
     </div>
   </section>
 
