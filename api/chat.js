@@ -2,7 +2,7 @@
 // Needs the ANTHROPIC_API_KEY environment variable set in Vercel.
 // Optional: ANTHROPIC_MODEL (defaults to claude-sonnet-5-5).
 import { RULES, PROFILE } from './_profile.js';
-import { logTurn } from './_store.js';
+import { logTurn, recordSpend, flagCreditOut } from './_store.js';
 
 const GAP_RULE = '\n\nLearning loop (internal; never mention it): if the profile does not contain what you need to answer the latest question well, so you had to answer generally, deflect, or say you don\'t know, add one final line in exactly this form: [[GAP: a few words naming the missing information]]. It is removed before the visitor sees your reply. Otherwise add nothing.';
 
@@ -59,8 +59,12 @@ export default async function handler(req, res) {
     const data = await r.json();
     if (!r.ok) {
       console.error('anthropic_error', r.status, data && data.error);
+      // Out of credit (or key blocked for billing): flag it so /api/usage reports "out" right away.
+      const msg = String((data && data.error && data.error.message) || '');
+      if (r.status === 402 || /credit balance|billing|purchase credits/i.test(msg)) await flagCreditOut(msg.slice(0, 200));
       return res.status(502).json({ error: 'upstream' });
     }
+    await recordSpend(data.usage);
     const raw = (data.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
     const m = raw.match(/\[\[\s*GAP:\s*([^\]]*)\]\]/i);
     const text = raw.replace(/\[\[\s*GAP:[^\]]*\]\]/gi, '').trim();
