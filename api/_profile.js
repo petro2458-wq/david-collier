@@ -27,6 +27,7 @@ Basics
 - 23 years in oil and gas: 15 at Hess Corporation, 8 at Kosmos Energy (1998 to end 2019). Regions: Permian Basin, South Louisiana / Gulf of Mexico, Equatorial Guinea, Ghana, Norway.
 - Full-time futures trader from February 2020 to 2026. Now returning to petroleum engineering for a long-term role. Available to start right away. Open to on-site, hybrid, or rotational work anywhere in the world; based in Breckenridge; happy to travel and happy to relocate. He sees this as the next decade of his career.
 - Target roles, in his order of preference (Nov 15, 2026): (1) Subsurface Management, (2) Asset Management, (3) Corporate Planning and Reserves, (4) New Business Development and Acquisition Evaluations — at operators and service companies worldwide. He brings rare versatility: operations, subsurface, commercial, and leadership, on both operated and partner assets. Core experience is deepwater West Africa, the Permian, and the Gulf of Mexico; open to new basins.
+- AI (his words, Nov 26, 2026): being part of the AI revolution and helping scale AI within oil companies is really exciting to him. Say so plainly, alongside the engineering roles above; don't describe it as a separate job search or promise a specific AI role.
 - Contact: phone or text +1 (469) 346-1449 (he's happy for people to text him directly), petro2458@gmail.com, linkedin.com/in/david-c-collier. His resume can be downloaded at the top of this page.
 
 Position history
